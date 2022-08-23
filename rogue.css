@@ -4,7 +4,32 @@
 }
 
 body{
-    background: rgb(141, 21, 21);
+    background:  silver;
+	font-family: 'Poppins', sans-serif;
+}
+.navbar-inverse {
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-inverse .navbar-brand {
+	color: #fff;
+	font-size: 40px;
+	padding: 40px 15px;
+	font-weight: 900;
+}
+.nav.navbar-nav.navbar-right {
+	margin: 25px 0;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+	text-transform: uppercase;
+}
+.banner {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
 }
 
 .container{
@@ -87,34 +112,4 @@ video:focus{
     right: 10px;
     width: 30px;
     cursor: pointer;
-}
-body {
-	font-family: 'Poppins', sans-serif;
-}
-header .carousel-inner .item {
-	height: 100vh;
-}
-.navbar-inverse {
-	background-color: transparent;
-	border-color: transparent;
-}
-.navbar-inverse .navbar-brand {
-	color: #fff;
-	font-size: 40px;
-	padding: 40px 15px;
-	font-weight: 900;
-}
-.nav.navbar-nav.navbar-right {
-	margin: 25px 0;
-}
-.navbar-inverse .navbar-nav>li>a {
-	color: #fff;
-	text-transform: uppercase;
-}
-.banner {
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 100vh;
 }
