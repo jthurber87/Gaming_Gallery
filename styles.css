@@ -34,3 +34,11 @@ body {
 	background-repeat: no-repeat;
 	height: 100vh;
 }
+h1{
+	align-self: center;
+}
+.description{
+	width: auto;
+	height: 50px;
+	position: relative
+}
