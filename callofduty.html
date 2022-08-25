@@ -73,16 +73,19 @@
         </div>
     </div>
     <div class="video-player" id="videoPlayer">
-        <video width="100%" controls autoplay id="myVideo"> 
+        <video width="85%" controls autoplay id="myVideo"> 
             <source src="/media/Vid_gallery_Img/" type="video/mp4">
         </video>
-        <img src="/media/Vid_gallery_Img/close.png" class="close-btn" onclick="stopVideo()">
+        <div onclick="stopVideo()">
+            <img src="/media/Vid_gallery_Img/close.png" class="close-btn" >
+        </div>
     </div>
-    <script>
+    <script> 
         var videoPlayer = document.getElementById("videoPlayer");
         var myVideo = document.getElementById("myVideo");
         
         function stopVideo(){
+            myVideo.pause();
             videoPlayer.style.display = 'none';
         }
         

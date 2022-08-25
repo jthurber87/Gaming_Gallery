@@ -107,9 +107,12 @@ video:focus{
     outline: none; 
 }
 .close-btn{
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: relative;
+    bottom: 71.5vh;
+    left: .5vh;
     width: 30px;
     cursor: pointer;
+}
+.close-btn:hover{
+    opacity: 77%;
 }
