@@ -51,47 +51,47 @@
                 <div class="small-img-row">
                     <div class="small-img">
                         <img src="/media/Vid_gallery_Img/pic2.png">
-                        <img src="/media/Vid_gallery_Img/play.png" class="play-btn" onclick="playVideo('/media/Vid_gallery_Img/PK-3kill.MP4')">
+                        <img src="/media/Vid_gallery_Img/play.png" class="play-btn" onclick="playVideo('https://www.youtube.com/embed/QefHrYew45k')">
                     </div>
-                    <p>Title of the video</p>
+                    <p>One vs Three shotgun clutch!</p>
                 </div>
                 <div class="small-img-row">
                     <div class="small-img">
                         <img src="/media/Vid_gallery_Img/PNG image.png">
-                        <img src="/media/Vid_gallery_Img/play.png" class="play-btn" onclick="playVideo('/media/Vid_gallery_Img/Sniper-clip.MP4')">
+                        <img src="/media/Vid_gallery_Img/play.png" class="play-btn" onclick="playVideo('https://www.youtube.com/embed/PVfyfRzQbJc')">
                     </div>
-                    <p>Title of the video</p>
+                    <p>Insane sentinal gameplay to win the match!</p>
                 </div>
                 <div class="small-img-row">
                     <div class="small-img">
                         <img src="/media/Vid_gallery_Img/pic4.png">
-                        <img src="/media/Vid_gallery_Img/play.png" class="play-btn" onclick="playVideo('/media/Vid_gallery_Img/Bangalore-clip.MP4')">
+                        <img src="/media/Vid_gallery_Img/play.png" class="play-btn" onclick="playVideo('https://www.youtube.com/embed/33yxbSBeun0')">
                     </div>
-                    <p>Title of the video</p>
+                    <p>Epic Bangalore Killing Spree!</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="video-player" id="videoPlayer">
-        <video width="85%" controls autoplay id="myVideo"> 
-            <source src="/media/Vid_gallery_Img/" type="video/mp4">
-        </video>
+        
+        <iframe width="560" height="315"  id="myVideo" src="https://www.youtube.com/embed/QefHrYew45k" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div onclick="stopVideo()">
             <img src="/media/Vid_gallery_Img/close.png" class="close-btn" >
         </div>
+    
     </div>
     <script> 
         var videoPlayer = document.getElementById("videoPlayer");
         var myVideo = document.getElementById("myVideo");
         
         function stopVideo(){
-            myVideo.pause();
+            myVideo.src="";
             videoPlayer.style.display = 'none';
         }
         
-        function playVideo(file){
-            myVideo.src = file;
+        function playVideo(https){
+            myVideo.src = https;
             videoPlayer.style.display = "block";
         }
     </script>

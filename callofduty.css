@@ -107,9 +107,6 @@ video:focus{
     outline: none; 
 }
 .close-btn{
-    position: relative;
-    bottom: 71.5vh;
-    left: .5vh;
     width: 30px;
     cursor: pointer;
 }
